@@ -1,0 +1,21 @@
+﻿
+
+<div ng-controller="HomeCtrl">
+    <div class="w3-container">
+        <span class="w3-large">Search by name or number</span> <input class="w3-input" type="text"
+                                                     ng-model="SearchParameter" placeholder="Search by name or Phone.." />
+    </div>
+    <ul class="w3-ul">
+        <li ng-repeat="person in ContactArr.AllCells| ByPhoneOrName:SearchParameter " style="margin:9px">
+            <div class="w3-bar-item">
+                <span class="w3-large">({{person.Key}}) {{person.Value.Name}}</span><br>
+                <span>[Phone]: {{person.Value.Phone}}</span>
+
+                <a class="w3-button w3-orange" href="Edit/{{person.Key}}">Edit</a>
+                <button class="w3-button w3-red" ng-click="Remove(person.Key)">Remove</button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+

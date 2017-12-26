@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <base href="/" />
+
+    <!-- Casade Style Sheet by : W3Schools -->
+    <link rel="stylesheet" href="Content/W3.css">
+    <!-- Casade Style Sheet by : W3Schools -->
+
+    <!-- Ref... all classes and angular libraries -->
+    <script src="Models/Cell.js"></script>
+    <script src="Models/HashTable.js"></script>
+    <script src="Models/Contact.js"></script>
+    <script src="AngularFiles/angular.js"></script>
+    <script src="AngularFiles/NgRoutes.js"></script>
+    <script src="appData/data.js"></script>
+    <!-- Ref... all classes, angular libraries, and "data" -->
+    
+    <script src="Filters/SearchFilter.js"></script>
+    <script src="Service/dbService.js"></script>
+    <!-- Service and Filter -->
+
+    <!-- Root App -->
+    <script src="app.js"></script>
+    <!-- Root App -->
+
+    <!-- Controllers -->
+    <script src="../Ctrl/HomeCtrl.js"></script>
+    <script src="../Ctrl/AddCtrl.js"></script>
+    <script src="../Ctrl/EditCtrl.js"></script>
+
+</head>
+<body ng-app="app">
+    <div class="w3-container w3-amber">
+        <h1>Welcome to the PhoneBook Application Site</h1>
+        <nav class="w3-bar w3-amber">
+            <a href="Home" class="w3-bar-item w3-button">Home (Show List)</a>
+            <a href="About" class="w3-bar-item w3-button">About</a>
+            <a href="AddNewPerson" class="w3-bar-item w3-button">Add new Contact</a>
+        </nav>
+    </div>
+    <ng-view></ng-view>
+    <h2 style="border:solid 1px black;">no ng-view below this point #!</h2>
+    
+
+    
+</body>
+</html>
+
