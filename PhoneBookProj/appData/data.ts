@@ -1,6 +1,5 @@
 ﻿
-var app = angular.module("app", ["ngRoute"]); 
-// Ng module Variable 
+
 
 
 var myDB: HashTable<Contact> = new HashTable<Contact>();

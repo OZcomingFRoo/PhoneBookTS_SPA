@@ -1,16 +1,22 @@
-﻿app.controller('EditCtrl', function ($scope, dbService, $routeParams) {
-    alert("loop?");
-    $scope.person = dbService.GetContact(<number>$routeParams.index);
+﻿app.controller('EditCtrl', function ($scope, dbService, $routeParams, $location, otherService) {
+    //Data Models
+    $scope.person = dbService.GetContact(<number>$routeParams.index); // Contact object received by Service
+    $scope.Phone = (<Cell<Contact>>$scope.person).Value.Phone; // string
+    $scope.Name = (<Cell<Contact>>$scope.person).Value.Name; // string
+    $scope.block = !(Contact.IsValid(new Contact($scope.Name, $scope.Phone))); // Boolean value
+    //Data Models
 
-    $scope.Phone = (<Cell<Contact>>$scope.person).Value.Phone;
-    $scope.Name = (<Cell<Contact>>$scope.person).Value.Name;
-    $scope.block = !(Contact.IsValid(new Contact($scope.Name, $scope.Phone)));
+    //Functions saves the VALID information of updated contact
+    //Redirects to Home page
     $scope.Save = function () {
-        console.log("STOP !!");
         dbService.SaveChanges(<number>$routeParams.index,
             new Contact($scope.Name, $scope.Phone));
-        document.getElementById("ToHome").click();
+        $location.path("Home");
     }
+
+    //Function is called when user edits Contact info
+    //Function checks if info is valid and gives '$scope.block' a new boolean value
+    //Function's responsibility is to let the user update Contact if it meets the requirements
     $scope.IsValid = function () {
         if (Contact.IsValid(new Contact($scope.Name, $scope.Phone)))
             $scope.block = false;

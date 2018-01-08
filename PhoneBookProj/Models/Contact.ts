@@ -21,12 +21,20 @@
     }
 
     public ValidName(): boolean { return (this.name.length >= 2) };
-    public ValidPhone(): boolean {
+    public ValidPhone(): boolean
+    {
         return (this.phone.length >= 8 && this.phone.length <= 12
-            && !isNaN(parseInt(this.phone)))
+            && this.ContainsOnlyDigits());
     };
 
-
+    private ContainsOnlyDigits(): boolean
+    {
+        for (let i = 0; i < this.phone.length; i++) {
+            if (isNaN(parseInt(this.phone[i])))
+                return false;
+        }
+        return true;
+    }
 
 }
 

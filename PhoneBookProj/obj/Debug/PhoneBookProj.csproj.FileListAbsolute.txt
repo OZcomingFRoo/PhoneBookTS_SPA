@@ -4,3 +4,9 @@ C:\Users\lonez\Desktop\PhoneBookTS_SPA\PhoneBookProj\bin\PhoneBookProj.pdb
 C:\Users\lonez\Desktop\PhoneBookTS_SPA\PhoneBookProj\obj\Debug\PhoneBookProj.dll
 C:\Users\lonez\Desktop\PhoneBookTS_SPA\PhoneBookProj\obj\Debug\PhoneBookProj.pdb
 C:\Users\lonez\Desktop\PhoneBookTS_SPA\PhoneBookProj\obj\Debug\PhoneBookProj.csprojResolveAssemblyReference.cache
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\PhoneBookTS_SPA\PhoneBookProj\bin\PhoneBookProj.dll.config
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\PhoneBookTS_SPA\PhoneBookProj\bin\PhoneBookProj.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\PhoneBookTS_SPA\PhoneBookProj\bin\PhoneBookProj.pdb
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\PhoneBookTS_SPA\PhoneBookProj\obj\Debug\PhoneBookProj.csprojResolveAssemblyReference.cache
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\PhoneBookTS_SPA\PhoneBookProj\obj\Debug\PhoneBookProj.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\PhoneBookTS_SPA\PhoneBookProj\obj\Debug\PhoneBookProj.pdb

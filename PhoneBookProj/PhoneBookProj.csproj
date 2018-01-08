@@ -54,6 +54,7 @@
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Models\Contact.ts" />
     <TypeScriptCompile Include="Service\dbService.ts" />
+    <TypeScriptCompile Include="Service\otherServices.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

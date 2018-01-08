@@ -9,28 +9,40 @@
     <!-- Casade Style Sheet by : W3Schools -->
     <link rel="stylesheet" href="Content/W3.css">
     <!-- Casade Style Sheet by : W3Schools -->
+    
+    <!-- Angular libraries -->
+    <script src="AngularFiles/angular.js"></script>
+    <script src="AngularFiles/NgRoutes.js"></script>
+    <!-- Angular libraries -->
 
-    <!-- Ref... all classes and angular libraries -->
+    <!-- Models/classes -->
     <script src="Models/Cell.js"></script>
     <script src="Models/HashTable.js"></script>
     <script src="Models/Contact.js"></script>
-    <script src="AngularFiles/angular.js"></script>
-    <script src="AngularFiles/NgRoutes.js"></script>
+    <!-- Models/classes -->
+
+    <!-- loads database (in actuality you don't load DBs in your application)-->
     <script src="appData/data.js"></script>
-    <!-- Ref... all classes, angular libraries, and "data" -->
-    
-    <script src="Filters/SearchFilter.js"></script>
-    <script src="Service/dbService.js"></script>
-    <!-- Service and Filter -->
+    <!-- loads database (in actuality you don't load DBs in your application)-->
 
     <!-- Root App -->
     <script src="app.js"></script>
     <!-- Root App -->
 
+    <!-- Service -->
+    <script src="Service/dbService.js"></script>
+    <script src="Service/otherServices.js"></script>
+    <!-- Service -->
+
+    <!-- Filter/s -->
+    <script src="Filters/SearchFilter.js"></script>
+    <!-- Filter/s -->
+
     <!-- Controllers -->
     <script src="../Ctrl/HomeCtrl.js"></script>
     <script src="../Ctrl/AddCtrl.js"></script>
     <script src="../Ctrl/EditCtrl.js"></script>
+    <!-- Controllers -->
 
 </head>
 <body ng-app="app">

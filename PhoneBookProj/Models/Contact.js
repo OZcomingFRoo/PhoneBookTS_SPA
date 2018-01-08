@@ -30,9 +30,16 @@ var Contact = (function () {
     ;
     Contact.prototype.ValidPhone = function () {
         return (this.phone.length >= 8 && this.phone.length <= 12
-            && !isNaN(parseInt(this.phone)));
+            && this.ContainsOnlyDigits());
     };
     ;
+    Contact.prototype.ContainsOnlyDigits = function () {
+        for (var i = 0; i < this.phone.length; i++) {
+            if (isNaN(parseInt(this.phone[i])))
+                return false;
+        }
+        return true;
+    };
     return Contact;
 }());
 //# sourceMappingURL=Contact.js.map
