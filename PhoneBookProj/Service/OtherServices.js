@@ -17,4 +17,5 @@ app.service('otherService', function () {
         return true;
     };
 });
-//# sourceMappingURL=OtherServices.js.map
+// Some extra comments
+//# sourceMappingURL=otherServices.js.map
