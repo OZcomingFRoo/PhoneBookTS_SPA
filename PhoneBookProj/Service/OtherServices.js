@@ -17,5 +17,4 @@ app.service('otherService', function () {
         return true;
     };
 });
-// Some extra comments
 //# sourceMappingURL=otherServices.js.map

@@ -3,14 +3,14 @@ app.filter('ByPhoneOrName', function (otherService) {
     return function (Arr, parameter) {
         if (!otherService.IsNullOrEmptyOrUndefined(parameter)) {
             var FilteredArr = new HashTable();
-            if (isNaN(parseInt(parameter))) {
+            if (isNaN(parseInt(parameter))) { //By Name
                 angular.forEach(Arr, function (item) {
                     if (otherService.StringContains(item.Value.Name, parameter))
                         //if (Contains(item.Value.Name, parameter))
                         FilteredArr.AddCell(item);
                 }); //By Name
             } //By Name
-            else {
+            else { //By Phone Number
                 angular.forEach(Arr, function (item) {
                     if (otherService.StringContains(item.Value.Phone, parameter))
                         //if (Contains(item.Value.Phone, parameter))

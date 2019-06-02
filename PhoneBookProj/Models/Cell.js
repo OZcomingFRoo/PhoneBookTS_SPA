@@ -1,4 +1,4 @@
-var Cell = (function () {
+var Cell = /** @class */ (function () {
     function Cell(Key, Value) {
         this.Key = Key;
         this.Value = Value;

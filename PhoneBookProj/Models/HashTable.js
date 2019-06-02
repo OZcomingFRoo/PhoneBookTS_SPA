@@ -1,4 +1,4 @@
-var HashTable = (function () {
+var HashTable = /** @class */ (function () {
     function HashTable() {
         this.IdCounter = 0;
         this.tableArr = [];
